@@ -1,0 +1,7 @@
+.venv/
+.env
+__pycache__/
+subs.json
+subs.json
+data/
+names.json

@@ -1,0 +1,14 @@
+services:
+  bot:
+    build: .
+    container_name: service-p
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/data
+    mem_limit: 256m
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
